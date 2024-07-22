@@ -1,0 +1,69 @@
+.card-container {
+     display: flex;
+     z-index: 1; /* Changed to ensure visibility */
+     flex-wrap: wrap;
+     margin-left: auto; /* Centering container */
+     margin-right: auto; /* Centering container */
+     margin-top: 2rem;
+     justify-content: center; /* Centering cards horizontally */
+   }
+   
+   .card {
+     margin: 70px;
+     padding: 20px;
+     border: 2px solid #ededed;
+     cursor: pointer;
+     border-radius: 8px; /* Added rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+   }
+   
+   .card-img-top {
+     width: 100%; /* Adjusted to fit card width */
+     height: auto; /* Maintain aspect ratio */
+     border-radius: 8px; /* Added rounded corners to image */
+   }
+   
+   .card-title {
+     margin-bottom: 1rem;
+     font-size: 1.25rem; /* Adjusted font size */
+   }
+   
+   .card-review {
+     margin-bottom: 1rem;
+     display: flex;
+     align-items: center; /* Vertically center stars and review count */
+   }
+   
+   .star-icon {
+     color: #d5ab55; /* Gold color for stars */
+     margin-right: 5px; /* Spacing between stars */
+   }
+   
+   .total-review {
+     margin-left: 10px; /* Spacing between stars and review count */
+     font-size: 1rem; /* Adjusted font size */
+   }
+
+   .card-price{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+
+   }
+   .bag{
+     color: #535353;
+   }
+   
+   /* Media Query for Responsiveness */
+   @media (max-width: 768px) {
+     .card-container {
+       margin-left: 1rem; /* Reduced margin for smaller screens */
+       margin-right: 1rem; /* Reduced margin for smaller screens */
+     }
+   
+     .card {
+       width: 100%; /* Ensure cards fit within smaller viewports */
+       margin: 10px 0; /* Adjust margin for smaller screens */
+     }
+   }
+   
