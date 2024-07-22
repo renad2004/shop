@@ -5,6 +5,7 @@ import data from "./db/data";
 import Recommended from "./recommended/recommended";
 import Sidebar from "./SideBar/SideBar";
 import Card from "./componts/card"
+
 import "./index.css";
 
 function App() {
